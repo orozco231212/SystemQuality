@@ -6,7 +6,7 @@ class Program
 
     static void ShowMainMenu()
     {
-        Console.WriteLine("===INICIANDO SISTEMA BIBLIOTECA===");
+        Console.WriteLine("=== INICIANDO SISTEMA BIBLIOTECA ===");
         Pause();
     }
 
