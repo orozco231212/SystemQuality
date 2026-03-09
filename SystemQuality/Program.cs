@@ -2,11 +2,15 @@
 
 class Program
 {
+    //===============================
+    //MENU PRINCIPAL DE LA BIBLIOTECA
+    //===============================
+
     static void Main() { ShowMainMenu(); }
 
     static void ShowMainMenu()
     {
-        Console.WriteLine("===INICIANDO SISTEMA BIBLIOTECA===");
+        Console.WriteLine("INICIANDO SISTEMA BIBLIOTECA");
         Pause();
     }
 
