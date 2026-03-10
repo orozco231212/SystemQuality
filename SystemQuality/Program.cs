@@ -200,5 +200,107 @@ class Program
         Console.WriteLine("Eliminar libro (validar si esta prestado)");
         Pause();
     }
+
+// =========================
+// USUARIOS
+// =========================
+
+static void ShowUsersMenu()
+{
+    Console.Clear();
+    Console.WriteLine("2) USUARIOS");
+    Console.WriteLine("2.1 Registrar usuario");
+    Console.WriteLine("2.2 Listar usuarios");
+    Console.WriteLine("2.3 Ver detalle (por ID/documento)");
+    Console.WriteLine("2.4 Actualizar usuario");
+    Console.WriteLine("2.5 Eliminar usuario");
+    Console.WriteLine("0 Volver");
+
+    Console.Write("Seleccione una opción: ");
+    int option = int.Parse(Console.ReadLine());
+
+    switch (option)
+    {
+        case 1: RegisterUser(); break;
+        case 2: ListUsers(); break;
+        case 3: ViewUserDetail(); break;
+        case 4: UpdateUserMenu(); break;
+        case 5: DeleteUser(); break;
+    }
+}
+
+static void RegisterUser()
+{
+    Console.Clear();
+    Console.WriteLine("2.1 Registrar usuario");
+    Pause();
+}
+
+static void ListUsers()
+{
+    Console.Clear();
+    Console.WriteLine("2.2 Listar usuarios");
+    Pause();
+}
+
+static void ViewUserDetail()
+{
+    Console.Clear();
+    Console.WriteLine("2.3 Ver detalle de usuario");
+    Pause();
+}
+
+// =========================
+// SUBMENÚ ACTUALIZAR USUARIO
+// =========================
+
+static void UpdateUserMenu()
+{
+    Console.Clear();
+    Console.WriteLine("2.4 Actualizar usuario");
+    Console.WriteLine("1 Editar nombre");
+    Console.WriteLine("2 Editar contacto");
+    Console.WriteLine("3 Activar / desactivar");
+    Console.WriteLine("0 Volver");
+
+    Console.Write("Seleccione una opción: ");
+    int option = int.Parse(Console.ReadLine());
+
+    switch (option)
+    {
+        case 1: EditUserName(); break;
+        case 2: EditUserContact(); break;
+        case 3: ToggleUserActiveStatus(); break;
+    }
+}
+
+static void EditUserName()
+{
+    Console.Clear();
+    Console.WriteLine("Editar nombre de usuario");
+    Pause();
+}
+
+static void EditUserContact()
+{
+    Console.Clear();
+    Console.WriteLine("Editar contacto de usuario");
+    Pause();
+}
+
+static void ToggleUserActiveStatus()
+{
+    Console.Clear();
+    Console.WriteLine("Activar / Desactivar usuario");
+    Pause();
+}
+
+static void DeleteUser()
+{
+    Console.Clear();
+    Console.WriteLine("2.5 Eliminar usuario");
+    Console.WriteLine("Validar: no permitir si tiene préstamos activos");
+    Pause();
+}
     
 }
