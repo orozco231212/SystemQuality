@@ -19,7 +19,7 @@ class Program
         Console.WriteLine("\nPresione una tecla para continuar...");
         Console.ReadKey();
     }
-    
+
     //===================
     //MENU  DE NAVEGACION
     //===================
@@ -32,7 +32,7 @@ class Program
         do
         {
             Console.Clear();
-            Console.WriteLine("===== SISTEMA BIBLIOTECA =====");
+            Console.WriteLine("SISTEMA BIBLIOTECA");
             Console.WriteLine("1. Libros");
             Console.WriteLine("2. Usuarios");
             Console.WriteLine("3. Prestamos");
@@ -63,5 +63,6 @@ class Program
 
         } while (option != 6);
     }
+
 
 }
