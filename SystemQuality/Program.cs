@@ -436,9 +436,29 @@ static void DeleteUser()
         Console.WriteLine("Datos reiniciados");
         Pause();
     }
-    
 
+    // ======
+    // SALIDA
+    // ======
 
+    static void ConfirmExitAndSave()
+    {
+        Console.WriteLine("Desea guardar antes de salir? (S/N)");
+        string r = Console.ReadLine();
 
+        if (r.ToUpper() == "S")
+        {
+            SaveData();
+        }
 
+        Console.WriteLine("Saliendo del sistema...");
+    }
+
+    static void Pause()
+    {
+        Console.WriteLine("Presione una tecla...");
+        Console.ReadKey();
+    }
 }
+
+
