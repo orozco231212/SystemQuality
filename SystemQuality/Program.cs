@@ -359,6 +359,45 @@ static void DeleteUser()
         Pause();
     }
 
+    // ====================
+    // BUSQUEDAS Y REPORTES
+    // ====================
+
+    static void ShowSearchReportsMenu()
+    {
+        Console.WriteLine("Menu Busquedas y Reportes");
+        Console.WriteLine("1 Buscar libro");
+        Console.WriteLine("2 Buscar usuario");
+        Console.WriteLine("3 Reportes");
+
+        int option = int.Parse(Console.ReadLine());
+
+        switch (option)
+        {
+            case 1: SearchBook(); break;
+            case 2: SearchUser(); break;
+            case 3: ReportsMenu(); break;
+        }
+    }
+
+    static void SearchBook()
+    {
+        Console.WriteLine("Buscar libro");
+        Pause();
+    }
+
+    static void SearchUser()
+    {
+        Console.WriteLine("Buscar usuario");
+        Pause();
+    }
+
+    static void ReportsMenu()
+    {
+        Console.WriteLine("Menu reportes");
+        Pause();
+    }
+
 
 
 }
