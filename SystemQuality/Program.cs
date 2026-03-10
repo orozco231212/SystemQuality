@@ -399,7 +399,44 @@ static void DeleteUser()
         Pause();
     }
 
+    // ============
+    // PERSISTENCIA
+    // ============
 
+    static void ShowPersistenceMenu()
+    {
+        Console.WriteLine("1 Guardar datos");
+        Console.WriteLine("2 Cargar datos");
+        Console.WriteLine("3 Reiniciar datos");
+
+        int option = int.Parse(Console.ReadLine());
+
+        switch (option)
+        {
+            case 1: SaveData(); break;
+            case 2: LoadData(); break;
+            case 3: ResetData(); break;
+        }
+    }
+
+    static void SaveData()
+    {
+        Console.WriteLine("Datos guardados");
+        Pause();
+    }
+
+    static void LoadData()
+    {
+        Console.WriteLine("Datos cargados");
+        Pause();
+    }
+
+    static void ResetData()
+    {
+        Console.WriteLine("Datos reiniciados");
+        Pause();
+    }
+    
 
 
 
