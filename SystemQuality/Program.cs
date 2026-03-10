@@ -388,15 +388,19 @@ static void DeleteUser()
 
     static void SearchUser()
     {
-        Console.WriteLine("Buscar usuario");
+        Console.WriteLine("Buscar usuario ");
         Pause();
     }
+
 
     static void ReportsMenu()
     {
         Console.WriteLine("Menu reportes");
         Pause();
     }
+
+
+
 
 
 
