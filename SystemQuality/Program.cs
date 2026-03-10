@@ -303,5 +303,60 @@ static void DeleteUser()
     Pause();
 }
 
-    
+ // =========================
+    // PRESTAMOS
+    // =========================
+
+    static void ShowLoansMenu()
+    {
+        Console.WriteLine("Menu Prestamos");
+        Console.WriteLine("1 Crear prestamo");
+        Console.WriteLine("2 Listar prestamos");
+        Console.WriteLine("3 Ver detalle");
+        Console.WriteLine("4 Registrar devolucion");
+        Console.WriteLine("5 Eliminar prestamo");
+        Console.WriteLine("0 Volver");
+
+        int option = int.Parse(Console.ReadLine());
+
+        switch (option)
+        {
+            case 1: CreateLoan(); break;
+            case 2: ListLoansMenu(); break;
+            case 3: ViewLoanDetail(); break;
+            case 4: RegisterReturn(); break;
+            case 5: DeleteLoan(); break;
+        }
+    }
+
+    static void CreateLoan()
+    {
+        Console.WriteLine("Crear prestamo - Validaciones sugeridas");
+        Pause();
+    }
+
+    static void ListLoansMenu()
+    {
+        Console.WriteLine("Listar prestamos");
+        Pause();
+    }
+
+    static void ViewLoanDetail()
+    {
+        Console.WriteLine("Ver detalle del prestamo");
+        Pause();
+    }
+
+    static void RegisterReturn()
+    {
+        Console.WriteLine("Registrar devolucion");
+        Pause();
+    }
+
+    static void DeleteLoan()
+    {
+        Console.WriteLine("Eliminar prestamo");
+        Pause();
+    }
+
 }
