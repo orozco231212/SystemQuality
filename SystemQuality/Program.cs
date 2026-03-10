@@ -302,5 +302,6 @@ static void DeleteUser()
     Console.WriteLine("Validar: no permitir si tiene préstamos activos");
     Pause();
 }
+
     
 }
