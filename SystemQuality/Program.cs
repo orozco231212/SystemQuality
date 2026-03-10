@@ -64,5 +64,141 @@ class Program
         } while (option != 6);
     }
 
+     // ==========
+    // MENÚ LIBROS
+    // ===========
 
+    static void ShowBooksMenu()
+    {
+        int option;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine(" MENU LIBROS ");
+            Console.WriteLine("1. Registrar libro");
+            Console.WriteLine("2. Listar libros");
+            Console.WriteLine("3. Ver detalle");
+            Console.WriteLine("4. Actualizar libro");
+            Console.WriteLine("5. Eliminar libro");
+            Console.WriteLine("0. Volver");
+
+            option = int.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1: RegisterBook(); break;
+                case 2: ListBooksMenu(); break;
+                case 3: ViewBookDetail(); break;
+                case 4: UpdateBookMenu(); break;
+                case 5: DeleteBook(); break;
+            }
+
+        } while (option != 0);
+    }
+
+    static void RegisterBook()
+    {
+        Console.WriteLine("Funcion: Registrar libro");
+        Pause();
+    }
+
+    static void ListBooksMenu()
+    {
+        int option;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("LISTAR LIBROS");
+            Console.WriteLine("1. Todos");
+            Console.WriteLine("2. Disponibles");
+            Console.WriteLine("3. Prestados");
+            Console.WriteLine("0. Volver");
+
+            option = int.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1: ListBooksAll(); break;
+                case 2: ListBooksAvailable(); break;
+                case 3: ListBooksBorrowed(); break;
+            }
+
+        } while (option != 0);
+    }
+
+    static void ListBooksAll()
+    {
+        Console.WriteLine("Mostrando todos los libros...");
+        Pause();
+    }
+
+    static void ListBooksAvailable()
+    {
+        Console.WriteLine("Mostrando libros disponibles...");
+        Pause();
+    }
+
+    static void ListBooksBorrowed()
+    {
+        Console.WriteLine("Mostrando libros prestados...");
+        Pause();
+    }
+
+    static void ViewBookDetail()
+    {
+        Console.WriteLine("Ver detalle del libro por ID/ISBN");
+        Pause();
+    }
+
+    static void UpdateBookMenu()
+    {
+        int option;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine(" ACTUALIZAR LIBRO ");
+            Console.WriteLine("1. Editar titulo");
+            Console.WriteLine("2. Editar autor");
+            Console.WriteLine("3. Editar año / categoria");
+            Console.WriteLine("0. Volver");
+
+            option = int.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1: EditBookTitle(); break;
+                case 2: EditBookAuthor(); break;
+                case 3: EditBookYearCategory(); break;
+            }
+
+        } while (option != 0);
+    }
+
+    static void EditBookTitle()
+    {
+        Console.WriteLine("Editar titulo del libro");
+        Pause();
+    }
+
+    static void EditBookAuthor()
+    {
+        Console.WriteLine("Editar autor del libro");
+        Pause();
+    }
+
+    static void EditBookYearCategory()
+    {
+        Console.WriteLine("Editar año o categoria del libro");
+        Pause();
+    }
+
+    static void DeleteBook()
+    {
+        Console.WriteLine("Eliminar libro (validar si esta prestado)");
+        Pause();
+    }
+    
 }
