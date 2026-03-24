@@ -1,4 +1,5 @@
 ﻿using System;
+using SystemQuality.Models;
 
 class Program
 {
@@ -11,7 +12,6 @@ class Program
     //===================
     //MENU  DE NAVEGACION
     //===================
-
 
     static void ShowMainMenu()
     {
@@ -27,6 +27,7 @@ class Program
             Console.WriteLine("4. Busquedas y Reportes");
             Console.WriteLine("5. Guardar / Cargar Datos");
             Console.WriteLine("6. Salir");
+            Console.WriteLine("7. Probar modelos");
 
             Console.Write("Seleccione una opcion: ");
 
@@ -43,6 +44,7 @@ class Program
                 case 4: ShowSearchReportsMenu(); break;
                 case 5: ShowPersistenceMenu(); break;
                 case 6: ConfirmExitAndSave(); break;
+                case 7: MenuPruebas(); break; // 
                 default:
                     Console.WriteLine("Opcion invalida");
                     Pause();
