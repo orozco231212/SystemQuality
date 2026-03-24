@@ -21,5 +21,21 @@ namespace SystemQuality.Models
             ISBN = isbn;
             Disponible = true;
         }
+
+            public string ResumenCorto()
+{
+    return $"{Titulo} - {Autor}";
+}
+
+public string DetalleCompleto()
+{
+    return $"Título: {Titulo}\nAutor: {Autor}\nISBN: {ISBN}\nDisponible: {Disponible}";
+}
+
+public override string ToString()
+{
+    return DetalleCompleto();
+
+        }
     }
 }
