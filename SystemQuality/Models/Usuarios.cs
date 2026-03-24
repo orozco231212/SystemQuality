@@ -4,10 +4,10 @@ namespace SystemQuality.Models
 {
     public class Usuario
     {
-        public string Nombre { get; set; }
-        public string Documento { get; set; }
-        public string Email { get; set; }
-        public bool Activo { get; set; }
+        public string Nombre { get; set; } = "";  
+        public string Documento { get; set; } = "";
+        public string Email { get; set; } = "";
+        public bool Activo { get; set; } = true;
 
         public Usuario()
         {
@@ -35,6 +35,8 @@ public string DetalleCompleto()
 public override string ToString()
 {
     return DetalleCompleto();
+
+
 
         }
     }

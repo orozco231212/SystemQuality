@@ -44,7 +44,7 @@ class Program
                 case 4: ShowSearchReportsMenu(); break;
                 case 5: ShowPersistenceMenu(); break;
                 case 6: ConfirmExitAndSave(); break;
-                case 7: MenuPruebas(); break; // 
+                case 7: MenuPruebas(); break;
                 default:
                     Console.WriteLine("Opcion invalida");
                     Pause();
@@ -53,6 +53,53 @@ class Program
 
         } while (option != 6);
     }
+    //===================
+// MENU DE PRUEBAS
+//===================
+static void MenuPruebas()
+{
+    Console.Clear();
+    Console.WriteLine("=== PRUEBA DE MODELOS ===");
+
+    // Prueba Libro
+   Libro libro = new Libro
+{
+    Titulo = "Cien años de soledad",
+    Autor = "Gabriel García Márquez",
+    ISBN = "123456"
+};
+
+    Console.WriteLine("\nLibro creado:");
+    Console.WriteLine($"Titulo: {libro.Titulo}");
+    Console.WriteLine($"Autor: {libro.Autor}");
+    Console.WriteLine($"ISBN: {libro.ISBN}");
+
+    // Prueba Usuario
+   Usuario usuario = new Usuario
+{
+    Nombre = "Juan Perez",
+    Documento = "123456789",
+    Email = "juan@email.com"
+};
+
+
+    Console.WriteLine("\nUsuario creado:");
+    Console.WriteLine($"Nombre: {usuario.Nombre}");
+    Console.WriteLine($"Documento: {usuario.Documento}");
+    Console.WriteLine($"Email: {usuario.Email}");
+
+    // Prueba Prestamo
+   Prestamo prestamo = new Prestamo
+{
+    Libro = libro,
+    Usuario = usuario
+};
+    Console.WriteLine("\nPrestamo creado:");
+    Console.WriteLine($"Libro: {prestamo.Libro.Titulo}");
+    Console.WriteLine($"Usuario: {prestamo.Usuario.Nombre}");
+
+    Pause();
+}
 
      // ==========
     // MENÚ LIBROS
