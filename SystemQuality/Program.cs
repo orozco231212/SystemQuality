@@ -132,6 +132,8 @@ static void MenuPruebas()
                 case 5: DeleteBook(); break;
             }
 
+            
+
         } while (option != 0);
     }
 
