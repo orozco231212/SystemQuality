@@ -1,0 +1,15 @@
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\bin\Debug\net10.0\SystemQuality.exe
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\bin\Debug\net10.0\SystemQuality.deps.json
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\bin\Debug\net10.0\SystemQuality.runtimeconfig.json
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\bin\Debug\net10.0\SystemQuality.dll
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\bin\Debug\net10.0\SystemQuality.pdb
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.GeneratedMSBuildEditorConfig.editorconfig
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.AssemblyInfoInputs.cache
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.AssemblyInfo.cs
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.csproj.CoreCompileInputs.cache
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.sourcelink.json
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.dll
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\refint\SystemQuality.dll
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.pdb
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\SystemQuality.genruntimeconfig.cache
+D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net10.0\ref\SystemQuality.dll
