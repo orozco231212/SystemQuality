@@ -4,8 +4,8 @@ namespace SystemQuality.Models
 {
     public class Prestamo
     {
-        public Libro Libro { get; set; }
-        public Usuario Usuario { get; set; }
+        public Libro? Libro { get; set; }
+        public Usuario? Usuario { get; set; }
         public DateTime FechaPrestamo { get; set; }
         public DateTime FechaLimite { get; set; }
         public DateTime? FechaDevolucion { get; set; }
@@ -39,12 +39,12 @@ public int DiasTranscurridos()
 
 public string ResumenCorto()
 {
-    return $"{Libro.Titulo} prestado a {Usuario.Nombre}";
+    return $"{Libro?.Titulo ?? "Desconocido"} prestado a {Usuario?.Nombre ?? "Desconocido"}";
 }
 
 public string DetalleCompleto()
 {
-    return $"Libro: {Libro.Titulo}\nUsuario: {Usuario.Nombre}\nEstado: {Estado}";
+    return $"Libro: {Libro?.Titulo ?? "Desconocido"}\nUsuario: {Usuario?.Nombre ?? "Desconocido"}\nEstado: {Estado}";
 }
 
 public override string ToString()

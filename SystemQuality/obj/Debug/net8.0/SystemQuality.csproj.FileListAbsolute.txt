@@ -1,5 +1,0 @@
-D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net8.0\SystemQuality.GeneratedMSBuildEditorConfig.editorconfig
-D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net8.0\SystemQuality.AssemblyInfoInputs.cache
-D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net8.0\SystemQuality.AssemblyInfo.cs
-D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net8.0\SystemQuality.csproj.CoreCompileInputs.cache
-D:\TRABAJOS SENA\C#\SystemQuality\SystemQuality\obj\Debug\net8.0\SystemQuality.sourcelink.json

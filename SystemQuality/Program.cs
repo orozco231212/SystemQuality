@@ -121,7 +121,7 @@ static void MenuPruebas()
             Console.WriteLine("5. Eliminar libro");
             Console.WriteLine("0. Volver");
 
-            option = int.Parse(Console.ReadLine());
+            option = int.Parse(Console.ReadLine()!);
 
             switch (option)
             {
@@ -156,8 +156,7 @@ static void MenuPruebas()
             Console.WriteLine("3. Prestados");
             Console.WriteLine("0. Volver");
 
-            option = int.Parse(Console.ReadLine());
-
+            option = int.Parse(Console.ReadLine()!);
             switch (option)
             {
                 case 1: ListBooksAll(); break;
@@ -205,7 +204,7 @@ static void MenuPruebas()
             Console.WriteLine("3. Editar año / categoria");
             Console.WriteLine("0. Volver");
 
-            option = int.Parse(Console.ReadLine());
+            option = int.Parse(Console.ReadLine()!);
 
             switch (option)
             {
@@ -257,7 +256,7 @@ static void ShowUsersMenu()
     Console.WriteLine("0 Volver");
 
     Console.Write("Seleccione una opción: ");
-    int option = int.Parse(Console.ReadLine());
+    int option = int.Parse(Console.ReadLine()!);
 
     switch (option)
     {
@@ -304,7 +303,7 @@ static void UpdateUserMenu()
     Console.WriteLine("0 Volver");
 
     Console.Write("Seleccione una opción: ");
-    int option = int.Parse(Console.ReadLine());
+    int option = int.Parse(Console.ReadLine()!);
 
     switch (option)
     {
@@ -357,7 +356,7 @@ static void DeleteUser()
         Console.WriteLine("5 Eliminar prestamo");
         Console.WriteLine("0 Volver");
 
-        int option = int.Parse(Console.ReadLine());
+        int option = int.Parse(Console.ReadLine()!);
 
         switch (option)
         {
@@ -410,7 +409,7 @@ static void DeleteUser()
         Console.WriteLine("2 Buscar usuario");
         Console.WriteLine("3 Reportes");
 
-        int option = int.Parse(Console.ReadLine());
+        int option = int.Parse(Console.ReadLine()!);
 
         switch (option)
         {
@@ -449,7 +448,7 @@ static void DeleteUser()
         Console.WriteLine("2 Cargar datos");
         Console.WriteLine("3 Reiniciar datos");
 
-        int option = int.Parse(Console.ReadLine());
+        int option = int.Parse(Console.ReadLine()!);
 
         switch (option)
         {
@@ -484,7 +483,7 @@ static void DeleteUser()
     static void ConfirmExitAndSave()
     {
         Console.WriteLine("Desea guardar antes de salir? (S/N)");
-        string r = Console.ReadLine();
+        string r = Console.ReadLine()!;
 
         if (r.ToUpper() == "S")
         {
