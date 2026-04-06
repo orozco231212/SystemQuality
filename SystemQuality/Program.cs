@@ -1,11 +1,16 @@
 ﻿using System;
 using SystemQuality.Models;
+using SystemQuality.Services;
 
 class Program
 {
     //===============================
     //MENU PRINCIPAL DE LA BIBLIOTECA
     //===============================
+
+    static LibroService    libroService    = new LibroService();
+    static UsuarioService  usuarioService  = new UsuarioService();
+    static PrestamoService prestamoService = new PrestamoService();
 
     static void Main() { ShowMainMenu(); }
 
@@ -28,6 +33,7 @@ class Program
             Console.WriteLine("5. Guardar / Cargar Datos");
             Console.WriteLine("6. Salir");
             Console.WriteLine("7. Probar modelos");
+            Console.WriteLine("8. Probar Services");
 
             Console.Write("Seleccione una opcion: ");
 
@@ -45,6 +51,7 @@ class Program
                 case 5: ShowPersistenceMenu(); break;
                 case 6: ConfirmExitAndSave(); break;
                 case 7: MenuPruebas(); break;
+                case 8: MenuServicios(); break;
                 default:
                     Console.WriteLine("Opcion invalida");
                     Pause();
