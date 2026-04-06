@@ -33,7 +33,7 @@ class Program
             Console.WriteLine("5. Guardar / Cargar Datos");
             Console.WriteLine("6. Salir");
             Console.WriteLine("7. Probar modelos");
-            Console.WriteLine("8. Probar Services");
+            Console.WriteLine("8. Probar Servicios");
 
             Console.Write("Seleccione una opcion: ");
 
@@ -104,6 +104,69 @@ static void MenuPruebas()
     Console.WriteLine("\nPrestamo creado:");
     Console.WriteLine($"Libro: {prestamo.Libro.Titulo}");
     Console.WriteLine($"Usuario: {prestamo.Usuario.Nombre}");
+
+    Pause();
+}
+
+// =========================
+// MENU PRUEBA DE SERVICES
+// =========================
+static void MenuServicios()
+{
+    Console.Clear();
+    Console.WriteLine("=== PRUEBA DE SERVICES ===\n");
+
+    // -- Agregar libros --
+    Libro l1 = new Libro("Cien años de soledad", "García Márquez", "ISBN-001");
+    Libro l2 = new Libro("El principito", "Saint-Exupéry", "ISBN-002");
+    Libro l3 = new Libro("Don Quijote", "Cervantes", "ISBN-003");
+    l1.Disponible = false;
+
+    libroService.AgregarLibro(l1);
+    libroService.AgregarLibro(l2);
+    libroService.AgregarLibro(l3);
+
+    // -- Agregar usuarios --
+    Usuario u1 = new Usuario("Ana Torres",  "1001", "ana@mail.com");
+    Usuario u2 = new Usuario("Juan Pérez",  "1002", "juan@mail.com");
+    Usuario u3 = new Usuario("María López", "1003", "maria@mail.com");
+    u3.Activo = false;
+
+    usuarioService.AgregarUsuario(u1);
+    usuarioService.AgregarUsuario(u2);
+    usuarioService.AgregarUsuario(u3);
+
+    // -- Agregar préstamos --
+    Prestamo p1 = new Prestamo(l1, u1, DateTime.Now.AddDays(-10), DateTime.Now.AddDays(5));
+    Prestamo p2 = new Prestamo(l2, u2, DateTime.Now.AddDays(-20), DateTime.Now.AddDays(-3));
+
+    prestamoService.AgregarPrestamo(p1);
+    prestamoService.AgregarPrestamo(p2);
+
+    // -- Búsquedas --
+    Console.WriteLine("\n-- Búsquedas --");
+    var libroBuscado = libroService.BuscarPorISBN("ISBN-002");
+    Console.WriteLine($"Libro por ISBN-002: {libroBuscado?.Titulo ?? "No encontrado"}");
+
+    var usuarioBuscado = usuarioService.BuscarPorDocumento("1001");
+    Console.WriteLine($"Usuario por doc 1001: {usuarioBuscado?.Nombre ?? "No encontrado"}");
+
+    // -- Ordenación --
+    Console.WriteLine("\n-- Libros ordenados por título --");
+    foreach (var l in libroService.OrdenarPorTitulo())
+        Console.WriteLine($"   {l.Titulo}");
+
+    Console.WriteLine("\n-- Usuarios ordenados por nombre --");
+    foreach (var u in usuarioService.OrdenarPorNombre())
+        Console.WriteLine($"   {u.Nombre}");
+
+    // -- KPIs --
+    libroService.MostrarEstadisticas();
+    usuarioService.MostrarEstadisticas();
+    prestamoService.MostrarEstadisticas();
+
+    // -- Array vs List --
+    libroService.CompararArrayVsLista();
 
     Pause();
 }
