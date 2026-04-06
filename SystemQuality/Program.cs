@@ -33,6 +33,7 @@ static LibroService    libroService    = new LibroService();
             Console.WriteLine("5. Guardar / Cargar Datos");
             Console.WriteLine("6. Salir");
             Console.WriteLine("7. Probar modelos");
+            Console.WriteLine("8. Probar servicios");
 
             Console.Write("Seleccione una opcion: ");
 
@@ -50,6 +51,7 @@ static LibroService    libroService    = new LibroService();
                 case 5: ShowPersistenceMenu(); break;
                 case 6: ConfirmExitAndSave(); break;
                 case 7: MenuPruebas(); break;
+                case 8: MenuServicios(); break;
                 default:
                     Console.WriteLine("Opcion invalida");
                     Pause();
